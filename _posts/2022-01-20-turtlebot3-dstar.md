@@ -23,13 +23,13 @@ O método D\* pode ser classificado em D\* original, D\* focado e D\* lite. O D\
 Enquanto, o D\* lite {% cite koenig2002d %}, desenvolvido por Sven Koenig e Maxim Likhachev, tem como base a estratégia do Lifelong Planning A\*. Este método implementa o mesmo comportamento do método D\* Focalizado mas o seu algoritmo é diferente. É, um algoritmo mais fácil de entender e analisar e pode ser implementado com uma menor quantidade de linhas de código. Devido a essas características, os sistemas atuais são normalmente baseados no D\* lite.
 
 {:.center}
-[![drawing550](../assets/img/dstar/pesquisadores-nomes.png)](../assets/img/2021-12-10-turtlebot3-astar-navigation/pesquisadores-nomes.png)
+[![drawing550](../assets/img/dstar/pesquisadores-nomes.png)](../assets/img/dstar/pesquisadores-nomes.png)
 
 Por isso, o plugin desenvolvido utiliza o método D\* lite. Ele funciona no ROS Kinetic e é compatível com o TurtleBot3. É capaz de gerar uma trajetória global e apresenta bons resultados em curtas distâncias. 
 Os testes iniciais e configurações do pacote foram realizados no ambiente de simulação. E, após o seu funcionamento foram feitos testes no robô real em um ambiente de labirinto. 
 
 {:.center}
-[![drawing550](../assets/img/dstar/testes.png)](../assets/img/2021-12-10-turtlebot3-astar-navigation/testes.png)
+[![drawing550](../assets/img/dstar/testes.png)](../assets/img/dstar/testes.png)
 
 
 O pacote ainda precisa de algumas correções para que forneça bons resultados em todas as situações, pois apresenta algumas incosistências para gerar trajetórias. Nas próximas fases será feita a implementação deste projeto utilizando o ROS 2 e serão feitos testes estatísticos comparando o desempenho do D* com as versões padrões do ROS e outras versões de algoritmos de exploração como o PRM. E, a sua junção com outras metodologias como o RRT. 
