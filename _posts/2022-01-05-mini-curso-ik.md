@@ -25,7 +25,7 @@ A cinemática inversa soluciona uma das tarefas ou aplicação mais importantes 
 Para mais informações à respeito do planejamento de trajetória de um manipulador veja este [post](https://mhar-vell.github.io/rasc/2021-09-01-doe-aum/) sobre o UR5.
 
 {:.center}
-[![drawing600](../assets/img/mini-curso-ik/warthog-manipulator.gif)](../assets/img/mini-curso-ik/warthog-manipulator.gif)
+[![drawing600](../assets/img/mini-curso-ik/warthog-manipulator.gif)]
 
 
 O nosso objetivo é compreender os fundamentos da cinemática inversa, com isso, o primeiro passo para aplicar os métodos de solução é atribuir um sistema de referência aos elos do manipulador. Para então atribuir os parâmetros de Denavit-Hartenberg (DH) para o sistema e, então construir matrizes homogêneas e realizar a transformação de referências. Por fim, são aplicados os métodos de solução, no nosso caso iremos abordar os métodos geométrico e o algébrico para então encontrarmos as equações.
@@ -67,7 +67,7 @@ O corpo rígido tem 6 graus de liberdade no espaço, entretanto devido a algumas
 Existem 6 tipos de juntas conhecidas como par inferior, as quais são juntas com superfície de contato.
 
 {:.center}
-[![drawing1000](../assets/img/mini-curso-ik/juntas.png)](../assets/img/mini-curso-ik/juntas.png)
+[![drawing1000](../assets/img/mini-curso-ik/juntas.png)]
 
 Os tipos de juntas mais utilizadas nos manipuladores são as juntas de revolução (rotacionais) e as juntas prismáticas (transversais).
 
@@ -131,7 +131,7 @@ Conforme mencionado anteriormente, a cinemática direta determina onde o end-eff
 Os parâmetros de Denavit-Hartenberg ou DH são 4 parâmetros associados a uma convenção particular, a qual relaciona frames de referências aos elos de uma cadeia cinemática.
 
 {:.center}
-[![drawing300](../assets/img/mini-curso-ik/para.png)](../assets/img/mini-curso-ik/para.png)
+[![drawing300](../assets/img/mini-curso-ik/para.png)]
 
 Esta convenção foi desenvolvida por Jacques Denavit, o qual era doutor em Engenharia mecânica e tinha bastante interesse pela área principalmente em relação a cinemática e a dinâmica. 
 E, por Richard Hartenberg que lecionou na área da Engenharia mecânica por cerca de 56 anos e desenvolveu diversas pesquisas, o que influenciou o renascimento do interesse de outros pesquisadores por essa área.
@@ -156,7 +156,7 @@ $\alpha_{i} \rightarrow$ o ângulo de $\hat{Z}\_{i}$ a $\hat{Z}\_{i+1}$ medida a
 <br>
 
 {:.center}
-[![drawing400](../assets/img/mini-curso-ik/DHParameter.png)](../assets/img/mini-curso-ik/DH.png)
+[![drawing400](../assets/img/mini-curso-ik/DHParameter.png)](../assets/img/mini-curso-ik/DHParameter.png)
 
 Podemos calcular as transformações individuais para cada elo, conforme a matriz homogênea que é composta por variáveis definidas a partir dos valores dos parâmetros de Denavit-Harteberg atribuidos ao sistema.
 
