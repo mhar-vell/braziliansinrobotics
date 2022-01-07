@@ -82,9 +82,9 @@ Este [link](https://github.com/Brazilian-Institute-of-Robotics/bir_turtlebot_exp
 <br>
 
 ### Referências
-<div style="text-align: left">
+
 {% bibliography --cited %}
-</div>   
+  
 
 ---------------------
 <!-- autor -->
