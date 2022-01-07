@@ -109,6 +109,7 @@ PLATFORMS
 DEPENDENCIES
   beautiful-jekyll-theme!
   bundler (>= 1.16)
+  jekyll-sass-converter
   jekyll-scholar
   jekyll-spaceship (~> 0.10.2)
   rake (~> 12.0)
