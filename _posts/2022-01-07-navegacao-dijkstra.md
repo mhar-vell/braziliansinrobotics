@@ -70,20 +70,19 @@ No ambiente real e com auxílio da aplicação do AMCL, o robô também teve suc
 {:.center}
 [![drawing550](../assets/img/2022-01-07-navegacao-dijkstra/real_waffle.gif)](../assets/img/2022-01-07-navegacao-dijkstra/real_waffle.gif)
  
- 
+Este [link](https://github.com/Brazilian-Institute-of-Robotics/bir_turtlebot_expl-dijkstra) possui o workspace do desenvolvimento da navegação em um ambiente simulado com as informações para executar as instalações dos pacotes necessários para a realização do SLAM, AMCL, deslocamento autônomo e teleoperação utilizando um joystick.
+
 A aplicação da navegação autônoma no TurtleBot 3 Waffle Pi foi bastante interessante já que esta funcionalidade é preciosa para a robótica, além de usar técnicas que são importantes para o desenvolvimento de sistemas autônomos móveis, ao exemplo do SLAM e do AMCL. Também vale notar que o algoritmo Dijkstra pode ser utilizados em UGV de médio e grande porte com sucesso. 
 
-### O repositório
 
-Este [link](https://github.com/Brazilian-Institute-of-Robotics/bir_turtlebot_expl-dijkstra) possui o workspace do desenvolvimento da navegação em um ambiente simulado. Este possui as informações para a instalações dos pacotes necessários realização do SLAM, AMCl, navegação autônoma e teleoperação utilizando um joystick.
+
 
 [^1]: É o *Framework*  mais usado no desenvolvimento de sistemas robóticos.
 
 <br>
 
-### Referências
 
-{% bibliography --cited %}
+
   
 
 ---------------------
@@ -117,7 +116,7 @@ Este [link](https://github.com/Brazilian-Institute-of-Robotics/bir_turtlebot_exp
 
         <tr style="text-align: center" >
 
-          <td style="color: #808080; vertical-align: top; text-align: justify"><small>Pesquisador Jr. em Robótica no Centro de Competências em Robótica e Sistemas Autônomos do Senai Cimatec. Matheus é formado em engenharia de controle e automação pela UFBA e autor da frase "um cafezinho sempre cai bem antes e depois de outro cafezinho".
+          <td style="color: #808080; vertical-align: top; text-align: justify"><small> Engenheiro de robótica  realizando  no Centro de Competências em Robótica e Sistemas Autônomos do Senai Cimatec. Matheus é formado em engenharia de controle e automação pela UFBA e autor da frase "um cafezinho sempre cai bem antes e depois de outro cafezinho"
           .</small></td>
 
           <td></td>
