@@ -28,7 +28,7 @@ para fins educacionais. O sistema de sensoriamento do Turtlebot 3 possui uma Ras
 ### Um pouco sobre o Algoritmo Dijkstra
  
 o algoritmo Dijkstra é capaz de obter uma trajetória entre
-dois nós. Esses dois nós podem ser vistos como pontos distintos no ambiente. De um certo nó no
+dois pontos em ambiente plano. Esses dois nós podem ser vistos como pontos distintos no ambiente. De um certo nó no
 espaço, o algoritmo Dijkstra obtem a partir de todos nós disponíveis uma trajetória para o outro nó, o objetivo. Os gifs abaixo apresentam a aplicação desta técnica desenvolvida em Python por [Atsushi Sakai](https://iopscience.iop.org/article/10.1088/1757-899X/705/1/012037/pdf). A parte em azul são os nós, locais no ambiente, que já
 foram explorados. É possível observar que a uma região em azul aumenta à medida que procura pela trajetória continua. Quando o ponto final, o objetivo, é encontrado, temos o trajeto a ser percorrido pelo robô.
 
@@ -44,9 +44,9 @@ foram explorados. É possível observar que a uma região em azul aumenta à med
 
 ### Navegação
  
-Agora  que o Turtlebot 3 e e o algoritmo Dijkstra já foram citados. Podemos falar da navegação que foi implementada. A aplicação foi realizada em dois tipos de ambientes: simulado e real. Na simulação, o robô inicialmente não conhecia o mapa. Para adquirir dados do mapa foi utilizada a técnica SLAM que permite a criação de um mapa do ambiente e a localização do robô de forma simultânea ao mesmo tempo. Um exemplo da aplicação de SLAM é demonstrado no projeto [APEREA](https://mhar-vell.github.io/rasc/2021-07-28-aperea-slam/).
+Agora  que o Turtlebot 3 e e o algoritmo Dijkstra já foram citados. Podemos falar da navegação que foi implementada. A aplicação foi realizada em dois tipos de ambientes: simulado e real. Na simulação, o robô inicialmente não conhecia o mapa. Para adquirir dados do mapa foi utilizada a técnica SLAM que permite a criação de um mapa do ambiente e a obtenção da localização do robô de forma simultânea. Existe vários algoritmo que realizam  SLAM, o que foi ultilizado na navegação foi o GMAPPING. Um exemplo da aplicação de SLAM usando o algoritmo GMAPPING é demonstrado no projeto [APEREA](https://mhar-vell.github.io/rasc/2021-07-28-aperea-slam/). Com os dados do mapa, o sistema robótico passa a notar os possivéis obstáculos que podem esta presentes no espaço.
  
-No ambiente real, o robô inicia a execução da navegação com o conhecimento do mapa. Nesta configuração é usada o pacote de software AMCL do ROS. O AMCl é um técnica de localização probabilística dedicada a robô em se deslocam em um plano 2D. Esta técnica utiliza adaptive Monte Carlo Localization que dados sobre a localização do robô com os dados do mapa do ambiente. Para execução do AMCL vom eficiência é necessário possuir dados do mapa de onde será realizado a navegação.
+No ambiente real, o robô inicia a execução da navegação com o conhecimento do mapa. Os dados do mapa foram obtidos usando SLAM. Desta vez foi usado o pacote de software AMCL do ROS. O AMCl, Adaptive Monte Carlo Localization, é um técnica de localização probabilística dedicada a robôs que se deslocam em planos 2D. Esta técnica utiliza dados sobre a localização do robô com os dados do mapa do ambiente. No Turtebot, os dados de localização são obtidos por sensores per encoders e IMU. P
 
 
 
@@ -55,19 +55,23 @@ No ambiente real, o robô inicia a execução da navegação com o conhecimento 
 Na simulação e com auxílio do SLAM, o Turtlebot teve sucesso ao alcançar o objetivo. Vale considerar que nesta aplicação o robô não tem, inicialmente, nenhum conhecimento do ambiente.
  
  
-No ambiente real e com auxílio da aplicação do AMCL, o robô também teve sucesso com a exploração. O Turtlebot enfrentou algumas dificuldades ao contornar os obstáculos.
+No ambiente real e com auxílio da aplicação do AMCL, o robô também teve sucesso com a navegação. O Turtlebot enfrentou algumas dificuldades ao contornar os obstáculos.
  
 {:.center}
 [![drawing550](../assets/img/2022-01-07-navegacao-dijkstra/turtle_waffle.gif)](../assets/img/2022-01-07-navegacao-dijkstra/turtle_waffle.gif)
  
  
-Com o AMCL, o robô teve sucesso quanto a navegação  no ambiente real, apesar de enfrentar dificuldades ao contornar as extremidades das paredes. As dificuldades para passar pelas extremidades podem ser vencidas os parâmetros dedicados à trajetória para evitar obstáculos.
+Com o AMCL, o robô teve sucesso quanto a navegação  no ambiente real, apesar de enfrentar dificuldades ao contornar as extremidades das paredes. O Sucesso foi em razão da tecnica AMCL usar o mapa completo do ambiente e assim o algoritmo Dijskstra pode obter a trajetória até o objetivo desde o momento inicial da navegação. As dificuldades para passar pelas extremidades podem ser vencidas os parâmetros dedicados à trajetória para evitar obstáculos.
  
 {:.center}
 [![drawing550](../assets/img/2022-01-07-navegacao-dijkstra/real_waffle.gif)](../assets/img/2022-01-07-navegacao-dijkstra/real_waffle.gif)
  
  
-A aplicação da navegação autônoma no Turtlebot 3 Waffle Pi foi bastante interessante já que esta funcionalidade é bastante importante para a robótica móvel. Também vale notar que este algoritmo pode ser utilizados em UGV de médio e grande porte com sucesso. 
+A aplicação da navegação autônoma no Turtlebot 3 Waffle Pi foi bastante interessante já que esta funcionalidade é preciosa para a robótica, além de usar técnicas que são impoertantes para o desenvolvimento de sistemas autônomos móveis, ao exemplo do SLAM e do AMCL. Também vale notar que o algoritmo Dijstra pode ser utilizados em UGV de médio e grande porte com sucesso. 
+
+## O repositório
+
+Este [link](https://github.com/Brazilian-Institute-of-Robotics/bir_turtlebot_expl-dijkstra) possui os o workspace do desenvolvimento que foi apresentado. O Readme possui as informações  para a instalações dos pacotes necessários realização do SLAM, navegação autônoma  e teleoperação utilizando um joystick.
 
 
 <br>
