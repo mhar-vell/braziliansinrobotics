@@ -104,7 +104,7 @@ $  docker exec -ti [NAME] bash
 
 
 ----------------------------------------------------------------
-Estes foram os comandos básicos para você começar a usar e compartilhar contêineres. Se você pretende utilizar ROS acompanhe nossas [dicas](https://mhar-vell.github.io/rasc/2021-12-13-docker-ROS/).Ficou com alguma dúvida? Entre em contato com a gente pelos comentários! :)
+Estes foram os comandos básicos para você começar a usar e compartilhar contêineres. Se você pretende utilizar ROS acompanhe nossas [dicas](https://braziliansinrobotics.com/2021-12-13-docker-ROS/).Ficou com alguma dúvida? Entre em contato com a gente pelos comentários! :)
 
 
 <br>
