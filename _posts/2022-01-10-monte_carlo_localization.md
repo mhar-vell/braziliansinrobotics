@@ -12,21 +12,57 @@ comments: true
 
 
 
-A Localização é  um quesito importante para robótica móvel, pois são com os dados da posição e orientação que as ações de controle são processadas. Em uma situação que os dados da localização não refletem muito bem a a dinâmica, a atuação pode ser prejudicada principalmente quanto a navegação é realizada de forma autônoma.
+A Localização é  um quesito importante para robótica móvel, pois são com os dados da posição e orientação que as ações de controle são processadas. Em uma situação em que os dados da localização não refletem muito bem  a dinâmica, a atuação pode ser prejudicada principalmente quanto a navegação é realizada de forma autônoma.
 
 Em ambientes internos e controlados, o uso de SLAM e tags, ajudam o robô a obter dados sobre a posição e orientação. Em ambientes externos nem sempre é possível obter dados da posição usando estas ferramentas. Uma solução para realizar a localização em ambientes externos é apresentada por [ Rainer K.](https://www.linkedin.com/in/rainer-k%C3%BCmmerle-256b4a15a/?originalSubdomain=de), [Rudolph T.](https://www.linkedin.com/in/rudolph-triebel-82107713/), [Patrick p.](https://www.linkedin.com/in/patrick-pfaff-97a51b9/) e [wolfram B.](https://www.linkedin.com/in/burgard/) no artigo [Monte Carlo Localization in Outdoor Terrains Using Multi-Level Surface Maps](https://www.researchgate.net/publication/220648287_Monte_Carlo_Localization_in_Outdoor_Terrains_Using_Multi-Level_Surface_Maps) que demonstra a aplicação do Monte Carlo localization com auxílio de mapas multi-níveis e compara os resultados obtidos com mapa de elevação.
 
-Em ambientes externos, é comum usar GPS para obter dados sobre a posição dos robôs, porém o sinal deste pode ser prejudicado pela presença de árvores, muros, paredes e dentre outros anteparos. Estes elementos podem atuar como obstáculos para o sinal do gps. Uma solução para contornar este problema é usar dados do mapa do ambiente juntamente com o Monte Carlo Localization.
+Em ambientes externos, é comum usar GPS para obter dados sobre a posição dos robôs, porém o sinal deste pode ser prejudicado pela presença de árvores, muros, paredes e dentre outros anteparos. Estes elementos podem atuar como obstáculos para o sinal do gps. Uma solução para contornar este problema é usar  o Monte carlo Localization juntamente com Mapas de múltiplas camadas.  Geralmente para realizar a localização de robôs são usados os Mapas de elevação 2,5D.
 
 
 
 [![drawing1000](../assets/img/2022-01-11-monte-carlo-localization/slide4.png)](../assets/img/2022-01-11-monte-carlo-localization/slide4.png)
 <br>
+
+
+## Mapa de Elevação
+
+Os mapas de elevação, comunalmente chamados de mapas 2,5D, são formados pela projeção de informações de profundidade de elementos verticais em plano 2D, em outras palavras, os objetos e obstáculos que estão situado em local são usados para representar um plano horizontal. Nestes mapas, os dados do plano são coletados e bem representados, já as elevações são processadas como um média dos dados verticais.
+
+
+#### Mapa de Elevação
+
+[![drawing1000](../assets/img/2022-01-11-monte-carlo-localization/elevation.png)](../assets/img/2022-01-11-monte-carlo-localization/elevation.png)
+<br>
+
+### Mapa de Multi-Níveis
+
+Os Mapas de multi-níveis, além representar bem o plano, consegue representar os dados verticais devido ao uso de representação em camadas.
+
+Os dados geométricos verticais dos mapas multi-níveis são usados para estimar a posição do robô, em outras palavras, o plano vertical e horizontal servem para calcular a localização. Os mapa de multi-níveis também oferecem dados sobre a posição do robô quanto ao eixo vertical, o eixo z. Um outro comparação detalhe, é que o custo computacional do mapa de multi-nível só é 10% maior em comparação ao mapa de elevação, em outras palavras, há um pequeno aumento no uso de hardware.
+
+Os dados do mapas de Multi-Níveis são  fornecidos para o algortimo de Monte Carlo Localization.
+
+[![drawing1000](../assets/img/2022-01-11-monte-carlo-localization/multi_layer.png)](../assets/img/2022-01-11-monte-carlo-localization/multi_layer.png)
+
 ### Monte Carlo Localization
 
 
-O Monte Carlo Localization (MCL) é um algoritmo destinado a sistemas robóticos móveis com o objetivo de obter dados sobre a posição e orientação do robô no ambiente. Este algoritmo usa um filtro de partículas, para posição e orientação, e um mapa do ambiente para realizar a estimação. Cada partícula representa uma possível posição e orientação que o robô pode apresentar. As partículas são estimadas usando filtro Bayesiano recursivo. Geralmente são usados mapas de elevação para abastecer de dados o Monte Carlo Localization. 
-Os mapas de elevação, comunalmente chamados de mapas 2.5 d, são formados pela projeção de informações de profundidade de elementos verticais em plano 2D, em outras palavras, os objetos e obstáculos que estão situado em local são usados para representar um plano horizontal. Nestes mapas, os dados do plano são coletados e bem representados, já as elevações são processadas como um média dos dados verticais.
+O Monte Carlo Localization (MCL) é um algoritmo destinado a sistemas robóticos com o objetivo de obter dados sobre a posição e orientação do robô no ambiente. Este algoritmo usa um filtro de partículas, para posição e orientação, e um mapa do ambiente para realizar a estimação. Cada partícula representa uma possível posição e orientação que o robô pode apresentar. As partículas são estimadas usando filtro Bayesiano recursivo. Geralmente são usados mapas de elevação para abastecer de dados o Monte Carlo Localization. A ideia chave do Monte Carlo Localization é manter a probabilidade constante:
+
+
+  
+ $$  Pr(x_t | z_{1:t},u_{0:t-1} ) $$
+
+
+
+
+onde $ x_t $ é probabilidade do  evento $ x_n $ acontecer no  momento $ t $  considerando os dados dos sensores desde da primeira medida  $ z_{1:t}$ e dados da modelagem do sistema até o momento anterior $ t-1 $. Cada evento $ x_t $  corresponde a uma pose que o robô pode assumi ambiente. Para manter  a probabilidade  constante, a apalicação segue dois modelos um destinado a predição do sistema e outro focado no sensoriamento.
+
+ Na  predição é aplicado a modelagem matemática do sistema que considera os valores da posição do robô com os valores de entrada dos sistema. No sensoriamento, também nomeada como correção, os dados das localização através de sensores são usados para ajustar o conhecimento que foi obtido durante a predição. Os mapas de multi níveis são usados tanto no modelo predição quanto quanto no de senseriamento.
+
+ No modelo de predição, a posição que obtida por essa fase é projetada do no mapa 3D. Com isso a localização do robô passa a considerar  o eixo x. Como já foi dito, para cada grid do mapa há uma adequação quanto a posição do eixo. Em essa adequação é em razão que cada grid do mapa detêm uma posição quanto a posição do eixo z. Por exemplo, se no grid A o valor de z é de 10 cm em relação a referência do mapa, o robô ao atingir esta região do mapa irá estara com com valor de 10 cm. 
+
+Os mapas de elevação, comunalmente chamados de mapas 2,5D, são formados pela projeção de informações de profundidade de elementos verticais em plano 2D, em outras palavras, os objetos e obstáculos que estão situado em local são usados para representar um plano horizontal. Nestes mapas, os dados do plano são coletados e bem representados, já as elevações são processadas como um média dos dados verticais.
 
 ### Mapa de Multi-Níveis
 
@@ -38,10 +74,8 @@ Os Mapas de multi-níveis, além representar bem o plano, consegue representar o
 
 #### Mapa de Multi-Níveis
 <br>
-[![drawing1000](../assets/img/2022-01-11-monte-carlo-localization/multi_layer.png)](../assets/img/2022-01-11-monte-carlo-localization/multi_layer.png)
 
-Os dados geométricos verticais dos mapas multi-níveis são usados para estimar a posição do robô, em outras palavras, o plano vertical e horizontal servem para calcular a localização. Os mapa de multi-níveis também oferecem dados sobre a posição do robô quanto ao eixo vertical, o eixo z. Um outro comparação detalhe, é que o custo computacional do mapa de multi-nível só é 10% maior em comparação ao mapa de elevação, em outras palavras, há um pequeno aumento no uso de hardware.
-
+[![drawin
 ## Resultados 
 
 O uso do Monte Carlos Localization com o mapa de multi-nível apresentou uma melhor representação da posição do robô em comparação ao mapa de elevação. Esta estratégia pode ser uma excelente opção em ambientes externos onde o nem sempre o sinal do GPS está disponível.
