@@ -10,13 +10,13 @@ comments: true
 ---
 
 
-Os robôs manipuladores são formados por elos e juntas, as quais são movimentadas por atuadores. São robôs bastante utilizados na indústria devido as suas funcionalidades. 
+Os robôs manipuladores são formados por elos e juntas, as quais são movimentadas por atuadores. São robôs muito utilizados na indústria devido as suas funcionalidades. 
 
 <center>
 <img src="{{ 'assets/img/blackthor/open.png' | relative_url }}" width="800" text-align=center alt="urdf1" />
 </center>
 
-Neste projeto iremos trabalhar com o OPEN Manipulator Pro, um robô da fabricante Robotis. Ele é baseado no ROS e seu controle pode ser feito usando o pacote do MoveIt!. Inclusive, tem o modelo do robô para ser utilizado no Gazebo {% cite robotis2022 %}.
+Neste projeto iremos trabalhar com o OPEN Manipulator Pro, um robô da fabricante Robotis. Ele é baseado no ROS e seu controle pode ser feito usando o pacote do MoveIt!. Inclusive, já tem o modelo do robô para ser utilizado no Gazebo {% cite robotis2022 %}.
 
 <center>
 <style type="text/css">
