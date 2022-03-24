@@ -74,6 +74,14 @@ Para que seja possível o cumprimento da missão, alguns componentes foram adici
 
 O uso de um micro-computador (Raspberry pi 4) no projeto permite a possibilidade de adição de novos sensores, caso seja necessário, além da câmera RGB que será utilizada para o reconhecimento do marcador ***AruCo***.
 
+- Webcam HD Logitech C270
+
+<center>
+<img src="{{ 'assets/img/blackthor/c270.png' | relative_url }}" alt="Dois protótipos construídos" width="150"/><br>
+</center>
+
+No estágio inicial do projeto foi utilizado a câmera C270 no intuito de simplificar o desenvolvimento do desafio na prática, por se tratar de uma câmera usb, a parte de integração no **ROS** se tornaria mais simples. A funcionalidade de reconhecimento do marcador ***AruCo*** foi realizada com sucesso em ambas as câmeras.
+
 #### Estrutura
 - Ferramenta para acionamento do botão
 
@@ -81,7 +89,7 @@ O uso de um micro-computador (Raspberry pi 4) no projeto permite a possibilidade
 <img src="{{ 'assets/img/blackthor/peca.png' | relative_url }}" alt="Dois protótipos construídos" width="150"/><br>
 </center>
 
-Foi feita a ***modelagem*** e ***impressão 3D*** de uma peça que tem a função de aumentar a área de atuaçao do ***end effector*** do manipulador. O resultado final da montagem pode ser vista na imagem a seguir:
+Foi feita a ***modelagem*** e ***impressão 3D*** de uma peça que tem a função de aumentar a área de atuaçao do ***end effector*** do manipulador. O resultado final da montagem pode ser visto na imagem a seguir:
 
 <center>
 <img src="{{ 'assets/img/blackthor/mount.jpg' | relative_url }}" alt="Dois protótipos construídos" width="750"/><br>
@@ -90,17 +98,19 @@ Blackthor montado
 
 #### Simulação
 
-A simulação do ***Blackthor*** teve bastante impacto no resultado final do projeto, o teste de funcionalidades e o desenvolvimento da resolução da missão foram iniciadas em ambiente de simulação, desenvolver o conhecimento inicial necessário no pacote ***Moveit!*** do ***ROS*** permitiu obter resultados mais concretos em ambiente real, a missão foi resolvida inicialmente no ***Gazebo***. A seguir um exemplo de movimentação do  ***OpenMANIPULATOR-P*** se dirigindo para uma ***Pose*** especificada previamente utilizando o ***Moveit!***:
+A simulação do ***Blackthor*** teve bastante impacto no resultado final do projeto, o teste das funcionalidades foi iniciado em ambiente de simulação, desenvolver o conhecimento inicial necessário no pacote ***Moveit!*** do ***ROS*** permitiu obter resultados mais concretos em ambiente real.
+A seguir um exemplo de movimentação do  ***OpenMANIPULATOR-P*** se dirigindo para uma ***Pose*** especificada previamente utilizando o ***Moveit!***:
 
 <center>
 <img src="{{ 'assets/img/blackthor/move-to-goal.gif' | relative_url }}" alt="Dois protótipos construídos" width="750"/><br>
 Pose to goal
 </center>
 
-Posteriormente o desafio foi resolvido:
 
-> Realizando a missão do Blackthor
+A missão de reconhecer o marcador **ArUco** e posteriormente acionar o botão de emergência foi concluída com sucesso:
+
+> Realizando a missão do Blackthor:
 
 <div align="center">
-<iframe width="620" height="315" src="https://www.youtube.com/watch?v=Mp-_eczVI4I" frameborder="0" allowfullscreen></iframe>
+<iframe width="620" height="315" src="https://youtu.be/Mp-_eczVI4I" frameborder="0" allowfullscreen></iframe>
 </div>
