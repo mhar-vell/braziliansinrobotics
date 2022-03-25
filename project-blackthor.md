@@ -159,9 +159,9 @@ A seguir um exemplo da integração das funcionalidades em ambiente real, nesse 
 
 ## Resultados e desafios
 
-A missão do **Blackthor** foi realizada com sucesso, para cumprir o desafio foi utilizado o [Move group interface](https://ros-planning.github.io/moveit_tutorials/doc/move_group_python_interface/move_group_python_interface_tutorial.html) do **MoveIt!**, foi desenvolvido um **script** que interage com o **MoveIt!** e manipula os estados do robô em função das transformações de ***frames*** (tf's) geradas pela parte de percepção. O **Blackthor** faz a busca pelo marcador e posteriormente aciona o botão de emergência.
+A missão do **Blackthor** foi realizada com sucesso, para cumprir o desafio foi utilizado o [Move group interface](https://ros-planning.github.io/moveit_tutorials/doc/move_group_python_interface/move_group_python_interface_tutorial.html) do **MoveIt!** por meio de um **script** que interage com o **MoveIt!** e manipula os estados do robô em função das transformações de ***frames*** geradas pela parte de percepção. O **Blackthor** faz a busca pelo marcador e posteriormente aciona o botão de emergência.
 
 > Resolvendo o desafio:
 
-<iframe width="730" height="370" src="https://www.youtube.com/embed/Mp-_eczVI4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="730" height="370" src="https://www.youtube.com/embed/QnnpI_J3Qdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
