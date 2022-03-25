@@ -96,7 +96,7 @@ Foi feita a ***modelagem*** e ***impressão 3D*** de uma peça que tem a funçã
 Blackthor montado
 </center>
 
-#### Simulação
+## Simulação
 
 A simulação do ***Blackthor*** teve bastante impacto no resultado final do projeto, o teste das funcionalidades foi iniciado em ambiente de simulação, desenvolver o conhecimento inicial necessário no pacote ***Moveit!*** do ***ROS*** permitiu obter resultados mais concretos em ambiente real.
 A seguir um exemplo de movimentação do  ***OpenMANIPULATOR-P*** se dirigindo para uma ***Pose*** especificada previamente utilizando o ***Moveit!***:
@@ -109,8 +109,59 @@ Pose to goal
 
 A missão de reconhecer o marcador **ArUco** e posteriormente acionar o botão de emergência foi concluída com sucesso:
 
-> Realizando a missão do Blackthor:
+> Realizando a missão do Blackthor em ambiente de simulação:
 
-<div align="center">
-<iframe width="620" height="315" src="https://youtu.be/Mp-_eczVI4I" frameborder="0" allowfullscreen></iframe>
-</div>
+<iframe width="730" height="370" src="https://www.youtube.com/embed/Mp-_eczVI4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<br>
+
+## Integração e testes
+
+Após a realização da simulação iniciamos os testes e integração em ambiente real,
+nessa etapa foram feitos os testes de hardware e a integração das funcionalidades em ambiente real.
+
+#### Teste dos motores
+
+Em um manipulador a atuação precisa dos motores nas juntas é imprescindível, portanto, o ***OpenMANIPULATOR-P*** foi desmontado para realização do teste dos motores, utilizamos o [DYNAMIXEL Wizard 2.0](https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_wizard2/) que é uma ferramenta otimizada para gerenciar os motores **DYNAMIXEL** em geral. Os testes consistiram em averiguar a rotação de cada motor separadamente, essa etapa foi concluída com sucesso e os motores não apresentaram disfunção.
+
+> **Testando os motores:**
+
+<center>
+<img src="{{ 'assets/img/blackthor/motor-test.gif' | relative_url }}" alt="Dois protótipos construídos" width="750"/><br>
+</center>
+
+<br>
+
+#### Teste e calibração da câmera
+
+Para testar a funcionalidade de reconhecimento do marcador **ArUco** foi preciso fazer a integração da câmera e a calibração da mesma, foi utilizado o pacote [usb_cam](http://wiki.ros.org/usb_cam) para fazer integração com **ROS** e o pacote [camera_calibration](http://wiki.ros.org/camera_calibration) para pegar os parâmetros de calibração da câmera.
+
+> **Utilizando o camera_calibration:**
+
+<center>
+<img src="{{ 'assets/img/blackthor/camera-calibration.gif' | relative_url }}" alt="Dois protótipos construídos" width="750"/><br>
+</center>
+
+<br>
+
+#### Aplicando as funcionalidades em ambiente real
+
+A seguir um exemplo da integração das funcionalidades em ambiente real, nesse exemplo o ***Blackthor*** executa a **atuação** baseada no **planejamento** da trajetória e faz o reconhecimento do marcador através da **percepção**.
+
+> Seguindo o planejamento e reconhecendo o marcador:
+
+<center>
+<img src="{{ 'assets/img/blackthor/func.gif' | relative_url }}" alt="Dois protótipos construídos" width="750"/><br>
+</center>
+
+<br>
+
+## Resultados e desafios
+
+A missão do **Blackthor** foi realizada com sucesso, para cumprir o desafio foi utilizado o [Move group interface](https://ros-planning.github.io/moveit_tutorials/doc/move_group_python_interface/move_group_python_interface_tutorial.html) do **MoveIt!**, foi desenvolvido um **script** que interage com o **MoveIt!** e manipula os estados do robô em função das transformações de ***frames*** (tf's) geradas pela parte de percepção. O **Blackthor** faz a busca pelo marcador e posteriormente aciona o botão de emergência.
+
+> Resolvendo o desafio:
+
+<iframe width="730" height="370" src="https://www.youtube.com/embed/Mp-_eczVI4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
