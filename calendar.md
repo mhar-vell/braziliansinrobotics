@@ -19,3 +19,5 @@ style="border-width:0" width="1000" height="600" frameborder="0" scrolling="no">
 
 <!-- </div>
 </body> -->
+
+[![drawing200](../assets/img/Notion_App_Logo.png)](https://www.notion.so/manipulators-meeting-notes-202204-5da31c65513c4a5cb47c24481d49cafc)
