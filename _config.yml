@@ -23,6 +23,10 @@ navbar-links:
   #   - Manisub: "project-1"
   
   projects in house:
+    - aerial: ""
+    - ground: ""
+    - manipulators: ""
+    - underwater: ""
     - Warthog: "project-warthog"
     - Flatfish@ROS: "project-flatfish_ros"
     - AUM: "project-aum"
