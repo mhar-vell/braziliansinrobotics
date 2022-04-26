@@ -2,8 +2,8 @@
 layout: post-page
 title: Mulheres na robótica 
 subtitle: Minha atuação na criação de robôs
-cover-img: /assets/img/2022-02-22-mulheres-na-engenharia/women-robotics.jpg
-thumbnail-img: /assets/img/2022-02-22-mulheres-na-engenharia/women-robotics.jpg
+cover-img: /assets/img/2022-03-07-mulheres-na-engenharia/women-robotics.jpg
+thumbnail-img: /assets/img/2022-03-07-mulheres-na-engenharia/women-robotics.jpg
 author: Brenda Alencar
 comments: true
 tags: [blog]
