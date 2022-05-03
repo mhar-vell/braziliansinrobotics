@@ -62,8 +62,10 @@ navbar-links:
     - ia para iniciantes: "2021-12-14-ia-para-iniciantes"
 
   blog: "blog"
-  
+
   About Us: "aboutus"
+
+  📺: "video" 
 
 # --- Logo --- #
 
