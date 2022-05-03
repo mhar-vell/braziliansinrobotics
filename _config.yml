@@ -29,6 +29,8 @@ navbar-links:
     - Walker: "project-walker"
     - bbot: "project-bbot"
     - moco: "project-moco"
+    - jax: "project-timon2"
+
 
     - 💤 DRoILT: "project-droilt"
     - 💤 Ergo: "project-ergo"
