@@ -17,7 +17,7 @@ Se você deseja utilizar um *container* em seus projetos de robótica junto ao R
 
 ### Como criar um contêiner ROS ?
 
-Existem duas formas de utilizar o ROS por meio de um contêiner. A **primeira opção**, a mais simples, é criando a partir de uma imagem padrão do ROS, que são disponibilizadas no repositório oficial do [**ROS**](https://registry.hub.docker.com/_/ros). Escolha a versão adequada e siga os seguintes passos, caso esteja em dúvidas sobre os comandos, sugerimos a publicação anterior sobre [**comandos básicos**](https://mhar-vell.github.io/rasc/2021-12-13-docker-instructions/).
+Existem duas formas de utilizar o ROS por meio de um contêiner. A **primeira opção**, a mais simples, é criando a partir de uma imagem padrão do ROS, que são disponibilizadas no repositório oficial do [**ROS**](https://registry.hub.docker.com/_/ros). Escolha a versão adequada e siga os seguintes passos, caso esteja em dúvidas sobre os comandos, sugerimos a publicação anterior sobre [**comandos básicos**](https://braziliansinrobotics.com/2021-12-13-docker-instructions/).
 
 ```shell
 $ docker pull ros:kinetic-robot # instalar a imagem
@@ -73,7 +73,7 @@ Uma outra dica é para os usuários do *VScode*. Existe uma extensão fornecida 
 
 
 ----------------------------------------------------------------
-Ficou com alguma dúvida? Dá uma olhada na nossa [introdução sobre Docker](https://mhar-vell.github.io/rasc/2021-12-13-docker-first-steeps/) ou sobre os [comandos básicos](https://mhar-vell.github.io/rasc/2021-12-13-docker-instructions/) .Entre em contato com a gente pelos comentários! :)
+Ficou com alguma dúvida? Dá uma olhada na nossa [introdução sobre Docker](https://braziliansinrobotics.com/2021-12-13-docker-first-steps/) ou sobre os [comandos básicos](https://braziliansinrobotics.com/2021-12-13-docker-instructions/) .Entre em contato com a gente pelos comentários! :)
 
 <br>
 
