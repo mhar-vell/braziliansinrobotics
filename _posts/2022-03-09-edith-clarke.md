@@ -16,8 +16,11 @@ A eletricidade tem fundamental importância para a ascenção tecnológica e est
 
 > "Edith Clarke foi a primeira engenheira eletricista e primeira professora de engenharia elétrica da Universidade do Texas em Austin."
 
-{:.center bordered}
-[![drawing450](../assets/img/2022-02-21-edith-clarke/edith-clarke2.jpeg)](../assets/img/2022-03-09-edith-clarke/edith-clarke2.jpeg)
+{:.center}
+![drawing450](../assets/img/2022-03-09-edith-clarke/edith-clarke2.jpeg)
+
+<!-- [![drawing450](../assets/img/2022-03-09-edith-clarke/edith-clarke2.jpeg)](../assets/img/2022-03-09-edith-clarke/edith-clarke2.jpeg) -->
+
 
 {:.center}
 Edith Clarke
@@ -33,8 +36,8 @@ Apesar do contexto do século vinte se apresentar como ***desafiador*** para as 
 
 "Tem como objetivo promover e defender a excelência nas artes liberais e ciências bem como doutrinar os alunos destas áreas que **se destacam nas faculdades e universidades norte-americanas**." A seguir uma representação do símbolo da Phi Beta Kappa:
 
-{:.center bordered}
-[![drawing500](../assets/img/2022-02-21-edith-clarke/phi_beta_kappa.jpg)](../assets/img/2022-03-09-edith-clarke/phi_beta_kappa.jpg)
+{:.center}
+![drawing500](../assets/img/2022-03-09-edith-clarke/phi_beta_kappa.jpg)
 
 <br>
 
@@ -44,8 +47,8 @@ Após a sua formatura, Edith ensinou matemática e física em uma escola particu
 executando cálculos para pesquisadores ou empresas. A seguir um exemplo de funcionárias que trabalhavam como "Computadores humanos".
 
 
-{:.center bordered}
-[![drawing500](../assets/img/2022-02-21-edith-clarke/human_computers.jpg)](../assets/img/2022-03-09-edith-clarke/human_computers.jpg)
+{:.center}
+![drawing500](../assets/img/2022-03-09-edith-clarke/human_computers.jpg)
 
 {:.center}
 Computer assistants
@@ -56,16 +59,16 @@ Nesse momento Edith demonstrava o seu potencial e na AT&T ficou fascinada com co
 Um dos maiores feitos realizados por Edith foi a **calculadora Clarke** em 1921. O propósito da calculadora era de facilitar
 a análise de linhas de transmissão reduzindo o procedimento de cálculos em até **dez vezes**. A patente foi aprovada em Setembro de 1925.
 
-{:.center bordered}
-[![drawing500](../assets/img/2022-02-21-edith-clarke/clark-calculator.jpeg)](../assets/img/2022-03-09-edith-clarke/clark-calculator.jpeg)
+{:.center}
+![drawing500](../assets/img/2022-03-09-edith-clarke/clark-calculator.jpeg)
 
 {:.center}
 Calculadora Clarke
 
 Em 1943, o livro **“Circuit Analysis of A-C Power Systems”** foi publicado, as notas de aula na General Electric foram a base para sua obra que foi muito utilizada em cursos de engenharia.
 
-{:.center bordered}
-[![drawing500](../assets/img/2022-02-21-edith-clarke/book2.jpg)](../assets/img/2022-03-09-edith-clarke/book2.jpg)
+{:.center}
+![drawing500](../assets/img/2022-03-09-edith-clarke/book2.jpg)
 
 {:.center}
 Circuit Analysis of A-C Power Systems
