@@ -63,6 +63,7 @@ navbar-links:
     - behavior trees: "2021-10-11-hsfm-behavior-trees"
     - docker: "2021-12-13-docker-first-steps"
     - ia para iniciantes: "2021-12-14-ia-para-iniciantes"
+    - ros2 arch linux : "2022-05-11-ros2-archlinux"
 
   blog: "blog"
 
