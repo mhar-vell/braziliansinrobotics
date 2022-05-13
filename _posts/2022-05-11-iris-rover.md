@@ -25,12 +25,15 @@ O robô com cerca de 4 quilos pretende ser o **primeiro Rover** americano desenv
 
 Além do Iris, a NASA está desenvolvendo, junto com a universidade Carnegie Mellon e a Artrobotic, um Rover lunar chamado **Moonranger** que foi projetado para operar de forma **autônoma** com o objetivo de **procurar evidências de água na superfície** e explorar o polo sul lunar.
 
+<!-- #TODO Sugiro a troca do termo gelo por agua em estado solido -->
 Assim que pousar na lua, o MoonRanger avaliará suas capacidades de condução, navegação e mapeamento, em passeios curtos próximos ao módulo de pouso. Em seguida, tentará realizar uma série de caminhadas distantes em busca de gelo.
 Segundo a **Nasa**, o rover se comunicará com uma estação base localizada em Nova-C, e o **módulo de pouso comunicará os dados de volta à Terra**. Tal operação pode abrir caminho para um sistema comercial **4G / LTE** para comunicações de missão crítica na superfície lunar.{% cite Nasaanun28 %}
 <center>
 <img src="{{ 'assets/img/2022-05-11-iris-rover/moon.jpg' | relative_url }}" width="600" text-align=center alt="img1" />
 </center>
 
+<!-- #TODO Sugiro a troca do termo gelo por agua em estado solido -->
+<!-- #TODO Sugiro trocar essa parte > (a exploracao no ambiente. Pois, o gelo ...) por  > a exploracao no ambiente, pois, o gelo ...-->
 O MoonRanger será o primeiro robô a buscar evidências da existência de gelo, em quantidades consideráveis, no solo lunar, crucial para a exploração desse ambiente. Pois, o gelo é um dos recursos mais importante do sistema solar segundo William "Red" Whittaker {% cite WilliamR99 %}, Professor de Investigação dos Fundadores da Universidade no Instituto de Robótica.
 
 <p align="center">
