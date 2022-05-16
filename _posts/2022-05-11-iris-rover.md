@@ -25,19 +25,19 @@ O robô com cerca de 4 quilos pretende ser o **primeiro Rover** americano desenv
 
 Além do Iris, a NASA está desenvolvendo, junto com a universidade Carnegie Mellon e a Artrobotic, um Rover lunar chamado **Moonranger** que foi projetado para operar de forma **autônoma** com o objetivo de **procurar evidências de água na superfície** e explorar o polo sul lunar.
 
-Assim que pousar na lua, o MoonRanger avaliará suas capacidades de condução, navegação e mapeamento, em passeios curtos próximos ao módulo de pouso. Em seguida, tentará realizar uma série de caminhadas distantes em busca de gelo.
+Assim que pousar na lua, o MoonRanger avaliará suas capacidades de condução, navegação e mapeamento, em passeios curtos próximos ao módulo de pouso. Em seguida, tentará realizar uma série de caminhadas distantes em busca de água em estado sólido.
 Segundo a **Nasa**, o rover se comunicará com uma estação base localizada em Nova-C, e o **módulo de pouso comunicará os dados de volta à Terra**. Tal operação pode abrir caminho para um sistema comercial **4G / LTE** para comunicações de missão crítica na superfície lunar.{% cite Nasaanun28 %}
 <center>
 <img src="{{ 'assets/img/2022-05-11-iris-rover/moon.jpg' | relative_url }}" width="600" text-align=center alt="img1" />
 </center>
 
-O MoonRanger será o primeiro robô a buscar evidências da existência de gelo, em quantidades consideráveis, no solo lunar, crucial para a exploração desse ambiente. Pois, o gelo é um dos recursos mais importante do sistema solar segundo William "Red" Whittaker {% cite WilliamR99 %}, Professor de Investigação dos Fundadores da Universidade no Instituto de Robótica.
+O MoonRanger será o **primeiro robô a buscar evidências da existência de água em estado sólido**, em quantidades consideráveis, no solo lunar, crucial para a exploração desse ambiente, pois, o gelo é um dos **recursos mais importante do sistema solar** segundo William "Red" Whittaker {% cite WilliamR99 %}, Professor de Investigação da Universidade no Instituto de Robótica.
 
 <p align="center">
     <img src="{{ 'assets/img/2022-05-11-iris-rover/moon2.gif' | relative_url }}" alt="Not found" width="600"/>
 </p>
 
-Entre as diversas possibilidades de pesquisas referentes ao desenvolvimento de tecnologias para serem utilizadas no espaço, pode-se afirmar que os Rovers se destacam, pois oferecem soluções práticas para as adversidades encontradas no ambiente lunar, tais como: radiação extrema, distância, falta de oxigênio, baixa pressão e baixas temperaturas. Sendo assim, é possível evidenciar a importância da robótica e da automação associada à exploração espacial.
+Entre as diversas **possibilidades de pesquisas** referentes ao desenvolvimento de tecnologias para serem utilizadas no espaço, pode-se afirmar que os **Rovers se destacam**, pois oferecem soluções práticas para as adversidades encontradas no ambiente lunar, tais como: **radiação extrema, distância, falta de oxigênio, baixa pressão e baixas temperaturas**. Sendo assim, é possível evidenciar a **importância da robótica e da automação associada à exploração espacial**.
 ### Referências
 
 <div style="text-align: left">
