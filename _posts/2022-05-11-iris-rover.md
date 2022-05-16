@@ -37,7 +37,7 @@ O MoonRanger será o **primeiro robô a buscar evidências da existência de ág
     <img src="{{ 'assets/img/2022-05-11-iris-rover/moon2.gif' | relative_url }}" alt="Not found" width="600"/>
 </p>
 
-Entre as diversas **possibilidades de pesquisas** referentes ao desenvolvimento de tecnologias para serem utilizadas no espaço, pode-se afirmar que os **Rovers se destacam**, pois oferecem soluções práticas para as adversidades encontradas no ambiente lunar, tais como: **radiação extrema, distância, falta de oxigênio, baixa pressão e baixas temperaturas**. Sendo assim, é possível evidenciar a **importância da robótica e da automação associada à exploração espacial**.
+Entre as diversas possibilidades de pesquisas referentes ao desenvolvimento de tecnologias para serem utilizadas no espaço, pode-se afirmar que os **Rovers se destacam**, pois oferecem soluções práticas para as adversidades encontradas no ambiente lunar, tais como: **radiação extrema, distância, falta de oxigênio, baixa pressão e baixas temperaturas**. Sendo assim, é possível evidenciar a **importância da robótica e da automação associada à exploração espacial**.
 ### Referências
 
 <div style="text-align: left">
