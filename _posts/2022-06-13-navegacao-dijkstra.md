@@ -2,8 +2,8 @@
 layout: post-page
 title: Navegação com Algoritmo Dijkstra
 subtitle: ' "Navegar é preciso" '
-cover-img: /assets/img/2022-01-07-navegacao-dijkstra/cover12.jpg
-thumbnail-img: /assets/img/2022-01-07-navegacao-dijkstra/turtlebotPi.jpg
+cover-img: /assets/img/2022-06-13-navegacao-dijkstra/cover12.jpg
+thumbnail-img: /assets/img/2022-06-13-navegacao-dijkstra/turtlebotPi.jpg
 share-img: /assets/img/rosa-logo-redondo.png
 author: Matheus Anselmo
 tags: [blog]
@@ -20,7 +20,7 @@ A navegação autônoma acontece quando alguma implementação lógica realiza t
 
 
 {:.center}
-[![drawing550](../assets/img/2022-01-07-navegacao-dijkstra/turtlebot.png)](../assets/img/2022-01-07-navegacao-dijkstra/turtlebot.png)
+[![drawing550](../assets/img/2022-06-13-navegacao-dijkstra/turtlebot.png)](../assets/img/2022-06-13-navegacao-dijkstra/turtlebot.png)
 
 O TurtleBot 3 Waffle Pi é um robô desenvolvido pela Robotis. É um robô de
 pequeno porte, projetado para operar em locais internos
@@ -38,12 +38,12 @@ foram explorados pelo algoritmo, e com isso os respectivos custos para alcançar
 
 
 {:.center}
-[![drawing550](../assets/img/2022-01-07-navegacao-dijkstra/dij1.gif)](../assets/img/2022-01-07-navegacao-dijkstra/dij1.gif)
+[![drawing550](../assets/img/2022-06-13-navegacao-dijkstra/dij1.gif)](../assets/img/2022-06-13-navegacao-dijkstra/dij1.gif)
 
 <br>
 
 {:.center}
-[![drawing550](../assets/img/2022-01-07-navegacao-dijkstra/dij2.gif)](../assets/img/2022-01-07-navegacao-dijkstra/dij2.gif)
+[![drawing550](../assets/img/2022-06-13-navegacao-dijkstra/dij2.gif)](../assets/img/2022-06-13-navegacao-dijkstra/dij2.gif)
  
 <br>
 
@@ -61,14 +61,14 @@ Na simulação e com auxílio do SLAM, o TurtleBot teve sucesso ao alcançar o o
  
 
 {:.center}
-[![drawing550](../assets/img/2022-01-07-navegacao-dijkstra/turtle_waffle.gif)](../assets/img/2022-01-07-navegacao-dijkstra/turtle_waffle.gif)
+[![drawing550](../assets/img/2022-06-13-navegacao-dijkstra/turtle_waffle.gif)](../assets/img/2022-06-13-navegacao-dijkstra/turtle_waffle.gif)
  
  
 
 No ambiente real e com auxílio da aplicação do AMCL, o robô também teve sucesso com a navegação. O TurtleBot enfrentou algumas dificuldades ao contornar os obstáculos. O Sucesso foi em razão da técnica AMCL usar o mapa completo do ambiente e assim o algoritmo Dijkstra pode obter a trajetória até o objetivo desde o momento inicial da navegação. As dificuldades para passar pelas extremidades podem ser atenuadas otimizando alguns parâmetros do pacote move_base.
  
 {:.center}
-[![drawing550](../assets/img/2022-01-07-navegacao-dijkstra/real_waffle.gif)](../assets/img/2022-01-07-navegacao-dijkstra/real_waffle.gif)
+[![drawing550](../assets/img/2022-06-13-navegacao-dijkstra/real_waffle.gif)](../assets/img/2022-06-13-navegacao-dijkstra/real_waffle.gif)
  
 Este [link](https://github.com/Brazilian-Institute-of-Robotics/bir_turtlebot_expl-dijkstra) possui o workspace do desenvolvimento da navegação em um ambiente simulado com as informações para executar as instalações dos pacotes necessários para a realização do SLAM, AMCL, deslocamento autônomo e teleoperação utilizando um joystick.
 
