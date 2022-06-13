@@ -22,8 +22,13 @@ navbar-links:
   #   - Kamino: "project-1"
   #   - Manisub: "project-1"
   
-  projects in house:
-    - Warthog: "project-warthog"
+  research lines:
+    - aerial:
+    - ground:
+    - manipulators:
+    - underwater: 
+    
+    - Warthog: "2021-01-15-project-warthog"
     - Flatfish@ROS: "project-flatfish_ros"
     - AUM: "project-aum"
     - Walker: "project-walker"
@@ -58,11 +63,14 @@ navbar-links:
 
     - ❌ Vertbot: "project-vertbot"
 
-  things and much more:
+  more knowledge:
     - pycontrol: "2021-09-23-py-control-bbot"
     - behavior trees: "2021-10-11-hsfm-behavior-trees"
     - docker: "2021-12-13-docker-first-steps"
     - ia para iniciantes: "2021-12-14-ia-para-iniciantes"
+    - cinemática inversa: "2022-01-12-mini-curso-ik"
+    - programação paralela: "2021-12-15-cuda-mini-curso"
+    - fusão de sensores: "2022-01-07-mini-curso-de-fusao-sensores"
 
   blog: "blog"
 
