@@ -95,9 +95,24 @@ Como o projeto está em desenvolvimento, simulações parciais estão sendo test
 
 ## Live Action
 Testes preliminares também estão sendo realizados em laboratório, onde alguns resultados foram alcançados.
+-->
 
 <br>
--->
+
+<!-- ### Referências
+
+<div style="text-align: left">
+  {% bibliography --cited %}
+</div>
+
+<br>
+
+#### Footnotes
+
+* footnotes will be placed here. This line is necessary
+{:footnotes}
+
+<br> -->
 
 <hr>
 
@@ -123,4 +138,3 @@ Testes preliminares também estão sendo realizados em laboratório, onde alguns
     </table>
   </div>
 </div>
-<br>

@@ -49,8 +49,8 @@ Tratando de desenvolvimento, é muito comum que você se depare com problemas de
 ----------------------------------------------------------------
 Se você se interessou por essa ferramenta, acompanhe as nossas instruções de como rodar um *container* e outras dicas de como utilizar o **ROS** nesta ferramenta!
 
-- [Como usar um container?](https://mhar-vell.github.io/rasc/2021-12-13-docker-instructions/)
-- [ROS + Docker](https://mhar-vell.github.io/rasc/2021-12-13-docker-ROS/)
+- [Como usar um container?](https://braziliansinrobotics.com/2021-12-13-docker-instructions/)
+- [ROS + Docker](https://braziliansinrobotics.com/2021-12-13-docker-ROS/)
 
 
 <br>
